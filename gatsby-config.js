@@ -7,6 +7,14 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+
 module.exports = {
-  plugins: [],
+  siteMetadata: {
+    title: "Sample Blog",
+    description: "Gatsbyで作成したサンプルサイト。",
+    author: "Yuki"
+  },
+  // ローダー関連はこのファイルで定義する。gatsbyはプラグインが多いから、大体すぐ導入できそう。
+  plugins: [`gatsby-plugin-sass`],
 }
